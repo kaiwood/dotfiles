@@ -132,7 +132,7 @@ map <Leader>rh :Rhelper
 map <Leader>gs :Gstatus<cr>
 map <Leader>gc :Gcommit<cr>
 
-map <C-7> nohlsearch
+map <Leader>7 :nohlsearch<cr>
 
 
 " autocmd for different file types
