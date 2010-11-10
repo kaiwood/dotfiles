@@ -48,7 +48,7 @@ set visualbell
 
 " search stuff
 set incsearch
-set nohlsearch
+set hlsearch
 set ignorecase 
 set smartcase 
 
@@ -132,7 +132,7 @@ map <Leader>rh :Rhelper
 map <Leader>gs :Gstatus<cr>
 map <Leader>gc :Gcommit<cr>
 
-
+map <C-7> nohlsearch
 
 
 " autocmd for different file types
@@ -225,6 +225,7 @@ if has("gui_running")
       set linespace=1
       set fuoptions=maxvert,maxhorz
       let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+      let Tlist_Use_Right_Window = 1
       set guifont=DejaVu\ Sans\ Mono:h12
     endif
 
