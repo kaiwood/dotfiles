@@ -197,12 +197,12 @@ autocmd FileType ruby let g:SuperTabDefaultCompletionType = "context"
 
 "NERD_Tree config
 let NERDTreeChDirMode=2
-let NERDTreeWinSize=30
+let NERDTreeWinSize=35
 
 " TList config
 let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
 let Tlist_Use_Right_Window = 1
-let Tlist_WinWidth = 30
+let Tlist_WinWidth = 40
 
 " ragtag config
 let g:ragtag_global_maps = 1
