@@ -197,7 +197,12 @@ autocmd FileType ruby let g:SuperTabDefaultCompletionType = "context"
 
 "NERD_Tree config
 let NERDTreeChDirMode=2
-let NERDTreeWinSize=40
+let NERDTreeWinSize=30
+
+" TList config
+let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+let Tlist_Use_Right_Window = 1
+let Tlist_WinWidth = 30
 
 " ragtag config
 let g:ragtag_global_maps = 1
@@ -224,8 +229,6 @@ if has("gui_running")
     if has("gui_macvim")
       set linespace=1
       set fuoptions=maxvert,maxhorz
-      let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
-      let Tlist_Use_Right_Window = 1
       set guifont=DejaVu\ Sans\ Mono:h12
     endif
 
@@ -238,6 +241,7 @@ if has("gui_running")
 
     endif
 
+    au VimEnter * Tlist
     au VimEnter * NERDTree
     au VimEnter * wincmd p
 
