@@ -1,0 +1,13 @@
+To install:
+
+cd ~
+git clone http://github.com/kbrust/dotfiles.git
+
+ln -s ~/dotfiles/vim .vim
+ln -s ~/dotfiles/vimrc .vimrc
+
+Command-T:
+cd ~/dotfiles/vim/bundle/command-t/ruby/command-t
+ruby extconf.rb
+make
+
