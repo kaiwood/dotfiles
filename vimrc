@@ -229,7 +229,7 @@ if has("gui_running")
       set linespace=1
       set fuoptions=maxvert,maxhorz
       set guifont=DejaVu\ Sans\ Mono:h12
-let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+      let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
     endif
 
     if has("gui_gtk2")
