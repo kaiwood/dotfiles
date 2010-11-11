@@ -233,7 +233,7 @@ if has("gui_running")
     endif
 
     if has("gui_gtk2")
-      set guifont=Monospace\ 10
+      set guifont=Terminus\ 10
     endif
 
     " Windows stuff... just in case ;)
