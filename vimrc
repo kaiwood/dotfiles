@@ -200,7 +200,6 @@ let NERDTreeChDirMode=2
 let NERDTreeWinSize=35
 
 " TList config
-let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
 let Tlist_Use_Right_Window = 1
 let Tlist_WinWidth = 40
 
@@ -230,6 +229,7 @@ if has("gui_running")
       set linespace=1
       set fuoptions=maxvert,maxhorz
       set guifont=DejaVu\ Sans\ Mono:h12
+let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
     endif
 
     if has("gui_gtk2")
