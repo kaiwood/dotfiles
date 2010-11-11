@@ -44,7 +44,7 @@ set autowriteall
 set gdefault " default g flag on substitutions
 set hidden
 set wmh=0
-set visualbell
+set novisualbell
 
 " search stuff
 set incsearch
