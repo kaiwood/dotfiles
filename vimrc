@@ -31,6 +31,7 @@ if &t_Co > 2 || has("gui_running")
 endif
 
 set syntax=on 
+set vb t_vb="" " disable error beep AND visual bell
 set mouse=a 
 set backspace=indent,eol,start 
 set autowrite 
