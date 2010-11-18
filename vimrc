@@ -235,6 +235,7 @@ if has("gui_running")
 
     if has("gui_gtk2")
       set guifont=Terminus\ 10
+      let g:ackprg="ack-grep -H --nocolor --nogroup --column"
     endif
 
     " Windows stuff... just in case ;)
