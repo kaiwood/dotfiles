@@ -231,6 +231,7 @@ if has("gui_running")
       set fuoptions=maxvert,maxhorz
       set guifont=DejaVu\ Sans\ Mono:h12
       let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+      set transparency=7
     endif
 
     if has("gui_gtk2")
