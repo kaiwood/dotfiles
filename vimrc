@@ -31,7 +31,6 @@ if &t_Co > 2 || has("gui_running")
 endif
 
 set syntax=on 
-set vb t_vb="" " disable error beep AND visual bell
 set mouse=a 
 set backspace=indent,eol,start 
 set autowrite 
@@ -46,6 +45,7 @@ set gdefault " default g flag on substitutions
 set hidden
 set wmh=0
 set novisualbell
+set noerrorbells
 
 " search stuff
 set incsearch
@@ -235,7 +235,9 @@ if has("gui_running")
     endif
 
     if has("gui_gtk2")
+      colo lucius
       set guifont=Terminus\ 10
+      let g:ackprg="ack-grep -H --nocolor --nogroup --column"
     endif
 
     " Windows stuff... just in case ;)
