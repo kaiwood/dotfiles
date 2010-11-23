@@ -234,6 +234,7 @@ if has("gui_running")
     endif
 
     if has("gui_gtk2")
+      colo lucius
       set guifont=Terminus\ 10
       let g:ackprg="ack-grep -H --nocolor --nogroup --column"
     endif
