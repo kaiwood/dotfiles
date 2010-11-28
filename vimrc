@@ -262,5 +262,8 @@ endif
 if has("autocmd")
   " autocmd bufwritepost .vimrc source $MYVIMRC
   autocmd BufNewFile * silent! 0r ~/.vim/templates/%:e.tpl
+ 
+  " Save when losing focus
+  au FocusLost * :wa
 endif
 
