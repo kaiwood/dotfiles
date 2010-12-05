@@ -261,7 +261,7 @@ endif
 " Source the vimrc file after saving it
 if has("autocmd")
   " autocmd bufwritepost .vimrc source $MYVIMRC
-  autocmd BufNewFile * silent! 0r ~/.vim/templates/%:e.tpl
+  " autocmd BufNewFile * silent! 0r ~/.vim/templates/%:e.tpl
  
   " Save when losing focus
   au FocusLost * :wa
